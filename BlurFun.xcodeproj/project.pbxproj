@@ -14,6 +14,8 @@
 		D85FFE3F1D346B82006C491C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85FFE3D1D346B82006C491C /* LaunchScreen.storyboard */; };
 		D85FFE4A1D346B82006C491C /* BlurFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85FFE491D346B82006C491C /* BlurFunTests.swift */; };
 		D85FFE551D346B82006C491C /* BlurFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85FFE541D346B82006C491C /* BlurFunUITests.swift */; };
+		D85FFE651D34705C006C491C /* Bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = D85FFE641D34705C006C491C /* Bokeh.png */; };
+		D85FFE691D34783A006C491C /* Bokeh2.png in Resources */ = {isa = PBXBuildFile; fileRef = D85FFE681D34783A006C491C /* Bokeh2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D85FFE501D346B82006C491C /* BlurFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85FFE541D346B82006C491C /* BlurFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurFunUITests.swift; sourceTree = "<group>"; };
 		D85FFE561D346B82006C491C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85FFE641D34705C006C491C /* Bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bokeh.png; sourceTree = "<group>"; };
+		D85FFE681D34783A006C491C /* Bokeh2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bokeh2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				D85FFE361D346B81006C491C /* ViewController.swift */,
 				D85FFE381D346B82006C491C /* Main.storyboard */,
 				D85FFE3B1D346B82006C491C /* Assets.xcassets */,
+				D85FFE641D34705C006C491C /* Bokeh.png */,
+				D85FFE681D34783A006C491C /* Bokeh2.png */,
 				D85FFE3D1D346B82006C491C /* LaunchScreen.storyboard */,
 				D85FFE401D346B82006C491C /* Info.plist */,
 			);
@@ -233,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85FFE3F1D346B82006C491C /* LaunchScreen.storyboard in Resources */,
+				D85FFE651D34705C006C491C /* Bokeh.png in Resources */,
 				D85FFE3C1D346B82006C491C /* Assets.xcassets in Resources */,
+				D85FFE691D34783A006C491C /* Bokeh2.png in Resources */,
 				D85FFE3A1D346B82006C491C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
