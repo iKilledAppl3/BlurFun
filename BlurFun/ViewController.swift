@@ -3,7 +3,8 @@
 //  BlurFun
 //
 //  Created by iKilledAppl3 on 7/11/16.
-//  Copyright © 2016 iKilledAppl3. All rights reserved.
+//  Codebase update to Swift 5 on 11/20/22 by iKilledAppl3
+//  Copyright © 2016 - 2023 iKilledAppl3 LLC. All rights reserved.
 //
 
 import UIKit
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
         
         blurredView!.removeFromSuperview()
         blurLabel.text = "Blur has been removed!"
-        blurLabel.textColor = UIColor.whiteColor()
+        blurLabel.textColor = UIColor.white
         bokehImageView.image = UIImage (named: "Bokeh2.png")
         
     }
@@ -50,13 +51,13 @@ class ViewController: UIViewController {
         
         blurView!.removeFromSuperview()
         blurLabel.text = "Blur has been removed!"
-        blurLabel.textColor = UIColor.whiteColor()
+        blurLabel.textColor = UIColor.white
     }
 
     @IBAction func tapGestureAction(sender: AnyObject) {
         
       
-        let blurEffect = UIBlurEffect (style: .Light)
+        let blurEffect = UIBlurEffect (style: .light)
         blurredView = UIVisualEffectView (effect: blurEffect)
         view.addSubview(blurredView!)
         blurredView!.frame = view.bounds
@@ -70,7 +71,7 @@ class ViewController: UIViewController {
     @IBAction func blurButtonTapped(sender: AnyObject) {
         
         //Blur the screen!
-        let blurEffect = UIBlurEffect (style: .Dark)
+        let blurEffect = UIBlurEffect (style: .dark)
         blurView = UIVisualEffectView (effect: blurEffect)
         blurView!.center = view.center
         view.addSubview(blurView!)
@@ -97,7 +98,7 @@ class ViewController: UIViewController {
         blurView?.addGestureRecognizer(swipeGesture)
         
         //Add vibrancy effect to the blur view
-        let vibrantView = UIVibrancyEffect (forBlurEffect: blurEffect)
+        let vibrantView = UIVibrancyEffect (blurEffect: blurEffect)
         let vibrancyEffect = UIVisualEffectView (effect: vibrantView)
         vibrancyEffect.frame = blurView!.bounds
         
@@ -106,10 +107,10 @@ class ViewController: UIViewController {
 
         //Add text to display in the vibrant view
         vibrantLabel.text = "Content is Blurred!"
-        vibrantLabel.font = UIFont.systemFontOfSize(25.0)
-        vibrantLabel.textColor = UIColor.whiteColor()
+        vibrantLabel.font = UIFont.systemFont(ofSize: 25.0)
+        vibrantLabel.textColor = UIColor.white
         vibrantLabel.center = blurView!.center
-        vibrantLabel.textAlignment = .Center
+        vibrantLabel.textAlignment = .center
         vibrantLabel.sizeToFit()
         
         //add the label as a subview of the vibrancyEffect controller class (UIViewController)

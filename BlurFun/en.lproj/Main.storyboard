@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlurFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bokeh.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lau-bM-KhJ">
+                                <rect key="frame" x="-23" y="0.0" width="480" height="932"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QyV-h7-IWb" appends="YES" id="SyL-0e-GgT"/>
+                                    <outletCollection property="gestureRecognizers" destination="Zdv-ty-CIx" appends="YES" id="RrZ-av-sBy"/>
+                                    <outletCollection property="gestureRecognizers" destination="Zdv-ty-CIx" appends="YES" id="iJC-1x-icm"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1x-bd-wYM">
+                                <rect key="frame" x="353" y="137" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="yLp-N4-mrw">
+                                <rect key="frame" x="128" y="137" width="174" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <size key="titleShadowOffset" width="3" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Blur the Image">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.25709219858156029" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="blurButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqL-ZF-hw1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lau-bM-KhJ" secondAttribute="trailing" constant="-47" id="3Mf-Rd-ILe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K1x-bd-wYM" secondAttribute="trailing" constant="57" id="QSh-G6-X2g"/>
+                            <constraint firstItem="Lau-bM-KhJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="Rj5-jl-NlV"/>
+                            <constraint firstItem="Lau-bM-KhJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-43" id="WZY-Gk-zQb"/>
+                            <constraint firstItem="yLp-N4-mrw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="nLB-Ox-6YW"/>
+                            <constraint firstItem="yLp-N4-mrw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYE-fc-SGa"/>
+                            <constraint firstItem="K1x-bd-wYM" firstAttribute="top" secondItem="yLp-N4-mrw" secondAttribute="top" id="s4r-29-MXR"/>
+                            <constraint firstItem="Lau-bM-KhJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="suT-UV-cpA"/>
+                            <constraint firstItem="K1x-bd-wYM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vFq-cD-YZU"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lMh-ef-FAU" appends="YES" id="q3w-FK-Xag"/>
+                            <outletCollection property="gestureRecognizers" destination="lMh-ef-FAU" appends="YES" id="Yod-JE-e25"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="blurLabel" destination="K1x-bd-wYM" id="yNQ-Kh-nHZ"/>
+                        <outlet property="bokehImageView" destination="Lau-bM-KhJ" id="jdL-yw-6ov"/>
+                        <outlet property="swipeGesture" destination="lMh-ef-FAU" id="Fkj-ml-nz3"/>
+                        <outlet property="swipeMeAway" destination="Zdv-ty-CIx" id="2Wr-Hs-5st"/>
+                        <outlet property="tapGesture" destination="QyV-h7-IWb" id="Hwh-ve-sHr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QyV-h7-IWb">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="BYZ-38-t0r" id="cLy-OI-g2U"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Zdv-ty-CIx">
+                    <connections>
+                        <action selector="swipeMeAwayAction:" destination="BYZ-38-t0r" id="wNu-eq-lFF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="lMh-ef-FAU">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="BYZ-38-t0r" id="P1E-Dv-wQS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="431.16279069767444" y="425.53648068669531"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bokeh.png" width="520" height="923"/>
+    </resources>
+</document>
